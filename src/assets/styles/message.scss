@@ -1,0 +1,39 @@
+.message {
+  width: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+
+  color: #777;
+
+  transform-origin: bottom;
+  transition-property: opacity, transform;
+  transition-duration: 0.3s;
+
+  cursor: pointer;
+
+  &--hidden {
+    transform: scaleY(0);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &__hide-btn {
+    position: absolute;
+    top: -12px;
+    right: -20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+
+    border: 2px solid #dcd3cc;
+    border-radius: 50%;
+  }
+
+  &__hidimg {
+    opacity: 50%;
+  }
+}
